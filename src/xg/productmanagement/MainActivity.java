@@ -1,22 +1,46 @@
 package xg.productmanagement;
 
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.app.Activity;
-import android.view.Menu;
 
 public class MainActivity extends Activity {
+	private Button btnOpenApp;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		setipViews();
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
+	private void setipViews() {
+		btnOpenApp = (Button) findViewById(R.id.app_open_app);
+		
+		
+		btnOpenApp.setOnClickListener(clicker);
 	}
+
+	private OnClickListener clicker = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			switch (v.getId()) {
+			case R.id.app_open_app:
+				break;
+			case R.id.wap_open_app:
+				break;
+			case R.id.msg_open_app:
+				break;
+			case R.id.weibsite_filter:
+				break;
+
+			}
+
+		}
+	};
 
 }

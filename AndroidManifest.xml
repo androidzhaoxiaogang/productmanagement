@@ -21,6 +21,28 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="estore" />
+            </intent-filter>
+            <intent-filter
+                android:label=" 测试"
+                android:priority="999" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.yingyinglicai.com"
+                    android:port="8443"
+                    android:pathPrefix="/download"
+                    android:scheme="https" >
+                </data>
+            </intent-filter>
         </activity>
     </application>
 
