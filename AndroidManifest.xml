@@ -29,7 +29,7 @@
                 <data android:scheme="estore" />
             </intent-filter>
             <intent-filter
-                android:label=" 测试"
+                android:label=" 测试wap"
                 android:priority="999" >
                 <action android:name="android.intent.action.VIEW" />
 
