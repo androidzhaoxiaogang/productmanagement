@@ -6,22 +6,26 @@
     tools:context=".MainActivity" >
 
     <Button
+        android:id="@+id/app_open_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_open_app" />
 
     <Button
+        android:id="@+id/wap_open_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/wap_open_app" />
 
     <Button
+        android:id="@+id/msg_open_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/msg_open_app" />
     
     
     <Button
+        android:id="@+id/weibsite_filter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/weibsite_filter" />

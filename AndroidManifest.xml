@@ -8,6 +8,9 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
 
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -21,6 +24,32 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="YYLC:home" />
+            </intent-filter>
+            <intent-filter
+                android:label=" 测试wap"
+                android:priority="999" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.yingyinglicai.com"
+                    android:pathPrefix="/download"
+                    android:port="8443"
+                    android:scheme="https" >
+                </data>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="MessageActivity"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
