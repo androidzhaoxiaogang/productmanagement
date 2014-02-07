@@ -60,7 +60,7 @@ public class MessageActivity extends Activity {
 							"regNum = " + regNum + "; index = "
 									+ content.indexOf("£º") + 1);
 					textMessage.requestFocus();
-					textMessage.setText(regNum);
+					textMessage.setText(regNum); 
 					textMessage.setSelection(textMessage.getText().length());
 				}
 			}
